@@ -8,6 +8,12 @@
 				margin: 0px;    /*위 아래 여백 없애주기*/
 				padding: 0px;   /*margin은 바깥 여백, padding은 안쪽 여백*/
 			}
+			
+			#wrapper {
+				width: 1024px;
+				margin: 0px auto; /*자기가 알아서 width사이즈만 빼고 똑같이 좌우 여백 적용해줌*/
+				background-color: #f1f3f5;
+			}
 			#div1 {
 				width: 200px;
 				height: 200px;
@@ -20,8 +26,8 @@
 				background-color: #ced4da;
 				/*margin: 10px 10px 10px 10px;    10픽셀만큼 바깥여백이 생김 (하나만 주면 다 적용/ 순서: 시계방향 top right botton left)*/
 				/* margin-top: 10px;   한 방향만 주고 싶으면 이렇게 따로 있음 */
-				margin: 10px; 
-				padding: 10px;
+				margin: 10px 20px; 
+				padding: 10px 50px;
 			} 
 			
 			#div21 {
@@ -38,10 +44,12 @@
 		</style>
 	</head>
 	<body>
-		<div id="div1"></div>
-		<div id="div2">
-			<div id="div21"></div>
+		<div id="wrapper">
+			<div id="div1"></div>
+			<div id="div2">
+				<div id="div21"></div>
+			</div>
+			<div id="div3"></div>
 		</div>
-		<div id="div3"></div>
 	</body>
 </html>
