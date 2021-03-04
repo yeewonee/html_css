@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			*{
+				margin: 0px;    /*위 아래 여백 없애주기*/
+				padding: 0px;   /*margin은 바깥 여백, padding은 안쪽 여백*/
+			}
+			#div1 {
+				width: 200px;
+				height: 200px;
+				background-color: #ced4da;
+			} 
+			
+			#div2 {
+				width: 200px;
+				height: 200px;
+				background-color: #ced4da;
+				/*margin: 10px 10px 10px 10px;    10픽셀만큼 바깥여백이 생김 (하나만 주면 다 적용/ 순서: 시계방향 top right botton left)*/
+				/* margin-top: 10px;   한 방향만 주고 싶으면 이렇게 따로 있음 */
+				margin: 10px; 
+				padding: 10px;
+			} 
+			
+			#div21 {
+				width: 100px;
+				height: 100px;
+				background-color: #ffffff; 
+			} 
+			
+			#div3 {
+				width: 200px;
+				height: 200px;
+				background-color: #ced4da; 
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2">
+			<div id="div21"></div>
+		</div>
+		<div id="div3"></div>
+	</body>
+</html>
