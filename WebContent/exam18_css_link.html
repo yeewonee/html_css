@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			/* unvisited link */
+			a{
+				text-decoration: none;
+			}
+			
+			a:link {
+			  color: green;
+			}
+			
+			/* visited link 한 번 방문한 것*/
+			a:visited {
+			  color: green;
+			}
+			
+			/* mouse over link 마우스를 올렸을 때*/
+			a:hover { 
+			  color: hotpink;
+			}
+			
+			/* selected link */
+			a:active {
+			  color: green;
+			}
+			
+			/* a태그이면서 btn인것  */
+			a.btn{
+				border: 1px solid #dee2e6;
+				padding: 5px;
+			}
+			a.btn:hover{
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://aa.bb.cc">링크1</a>
+		<a href="http://tomcat.apache.org">링크2</a>
+		<a class="btn" href="http://tomcat.apache.org">링크2</a>
+	</body>
+</html>
